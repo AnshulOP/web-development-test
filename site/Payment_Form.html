@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application_Form</title>
+    </head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main_heading">University Application Form</h1>
+            <hr>
+            <h6>Required fields are followed by *</h6>
+            <h2 class="main">Student Details</h2>
+            <p>Enter Your Name: *<input type="text" name="name" required placeholder="Ayushi Singh"></p>
+            <p>Enter Your Age: *<input type="number" name="age" id="age" required placeholder="19"></p>
+            <p>D.O.B: *<input type="date" name="dob" id="dob" required placeholder="DD-MM-YYYY"></p>
+            <p>E mail: *<input type="email" name="mail" id="mail" required placeholder="ayu22222@gmail.com"></p>
+            <p>Occupation: *<input type="text" name="occupation" required placeholder="Unemployed"></p>
+            <p>
+                <fieldset>
+                    <legend>Gender *</legend>
+                    Male <input type="radio" name="gender" id="male" value="M" required>Female<input type="radio" name="gender" id="female" value="F" required>
+                </fieldset>
+            </p>
+            <br>
+            <hr>
+            <h2 class="main">Personal Details</h2>
+            <p>Enter Father's Name: *<input type="text" name="father" required placeholder="ABC"></p>
+            <p>Enter Mother's Name: *<input type="text" name="mother" required placeholder="XYZ"></p>
+            <p>Father's Occupation: *<input type="text" name="fatheroccupation" required placeholder="Bank Clerk, CA etc."></p>
+            <p>Mother's Occupation: *<input type="text" name="motheroccupation" required placeholder="Home Maker etc."></p>
+            <fieldset>
+                <legend>International Student?: *</legend>
+                <p><input type="radio" name="option" id="yup" required> NOPE <input type="radio" name="option" id="nope" required></p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="70" rows="8"></textarea></p>
+            <p>Pincode: *<input type="number" name="pincode" id="pincode" required placeholder="XXXXXX"></p>
+            <br>
+            <hr>
+            <h2 class="main">Educational Qualification</h2>
+            <p>Your Board: *
+                <select name="board" id="board" required>
+                <option value="">--Select Your Board--</option> 
+                <option value="cbse">CBSE</option>
+                <option value="icse">ICSE</option>
+                <option value="state">State Board</option>
+                <option value="other">Not Specified</option>
+            </select>
+            </p>
+            <p>Class 12th Percentage: *<input type="number" name="percentage12" id="percentage12" required></p>
+            <p>Class 10th Percentage: *<input type="number" name="percentage10" id="percentage10" required></p>
+            <fieldset>
+                <legend>Have you attempted JEE Mains?: *</legend>
+                <p>YES <input type="radio" name="choice" id="yes" required> NO <input type="radio" name="choice" id="no" required></p>
+            </fieldset>
+            <h4>Enter only if you have selected YES otherwise no need to fill:</h4>
+            <p>Enter your Chemistry Percentile: <input type="number" name="chemistry" id="chemistry"></p>
+            <p>Enter your Maths Percentile: <input type="number" name="maths" id="maths"></p>
+            <p>Enter your Physics Percentile: <input type="number" name="physics" id="physics"></p>
+            <p>Enter your JEE Mains rank: <input type="number" name="rank" id="rank"></p>
+            <br>
+            <hr>
+            <h2 class="main">For Personal Review</h2>
+            <p>
+                <h4>Where did you got to know about us?</h4> *
+                <select name="review" id="review" required>
+                <option value="">--Select One Option--</option> 
+                <option value="friends">From Friends</option>
+                <option value="ad">Advertisemnet</option>
+                <option value="already">Already knew</option>
+                <option value="guidance">Parent Guidance</option>
+                <option value="others">Other Sources</option>
+            </select>
+            </p>
+            <br>
+            <h3 class="main">Check out our official website for more information about us.</h3>
+            <fieldset>
+                <legend>Review Us! </legend>
+                <p>5 <input type="radio" name="rateus" id="five"> 4 <input type="radio" name="rateus" id="four"> 3 <input type="radio" name="rateus" id="three"> 2 <input type="radio" name="rateus" id="two"> 1 <input type="radio" name="rateus" id="one"></p>
+            </fieldset>
+            <br>
+            <hr>
+            <h4>Select between the following to see further content.</h4>
+            <input type="submit" value="Submit"> <input type="submit" value="Cancel">
+            <br>
+            <br>
+            <h2 class="main_heading">Thank You!</h2>
+
+        </form>
+</body>
+
+</html>
